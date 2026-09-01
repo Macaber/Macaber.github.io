@@ -4,51 +4,57 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Macaber 的个人博客：关于代码、设计与持续探索。" />
-    <meta name="theme-color" content="#080a0f" />
-    <title>Macaber — Code, craft &amp; curiosity</title>
+    <meta name="theme-color" content="#f5f5f7" />
+    <title>Macaber — 思考、创造与记录</title>
     <link rel="stylesheet" href="/assets/styles.css" />
-    <script>try{document.documentElement.dataset.theme=localStorage.getItem('theme')||'dark'}catch(e){}</script>
+    <script>try{document.documentElement.dataset.theme=localStorage.getItem('theme')||'light'}catch(e){}</script>
   </head>
   <body>
-    <div class="noise" aria-hidden="true"></div>
-    <div class="pointer-glow" aria-hidden="true"></div>
     <header class="site-header shell">
-      <a class="brand" href="/" aria-label="返回首页"><span class="brand-mark">M<span>/</span></span><span>MACABER<span class="brand-dot">.</span></span></a>
+      <a class="brand" href="/" aria-label="返回首页"><span class="brand-mark">M</span><span>Macaber</span></a>
       <nav aria-label="主导航"><a href="#about">关于</a><a href="#docs">文档</a><a href="https://github.com/Macaber" target="_blank" rel="noreferrer">GitHub ↗</a></nav>
       <button class="icon-button theme-toggle" type="button" aria-label="切换主题" title="切换主题"><span aria-hidden="true">◐</span></button>
     </header>
     <main>
       <section class="hero shell" id="about">
         <div class="hero-copy reveal">
-          <div class="eyebrow"><i></i> AVAILABLE FOR NEW IDEAS</div>
-          <h1>BUILDING THINGS<br />FOR THE <em>WEB.</em></h1>
-          <p class="hero-intro">你好，我是 <strong>Macaber</strong>。这里收藏代码、设计和那些值得被认真记录的思考。</p>
-          <div class="hero-actions"><a class="button button-primary" href="#docs">浏览文档 <span>↓</span></a><a class="button button-ghost" href="https://github.com/Macaber" target="_blank" rel="noreferrer">查看 GitHub ↗</a></div>
+          <div class="eyebrow">MACABER NOTES</div>
+          <h1>想法，<br /><em>经过打磨。</em></h1>
+          <p class="hero-intro">一个关于代码、设计与持续探索的个人空间。<br />把复杂的事想清楚，再简单地写下来。</p>
+          <div class="hero-actions"><a class="button button-primary" href="#docs">浏览文档 <span>↓</span></a><a class="button button-ghost" href="https://github.com/Macaber" target="_blank" rel="noreferrer">访问 GitHub <span>↗</span></a></div>
         </div>
         <div class="hero-visual reveal" aria-hidden="true">
-          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
-          <div class="core"><span class="core-letter">M</span><span class="core-caption">EST. / NOW</span></div>
-          <div class="float-tag tag-one">01 / THINK</div><div class="float-tag tag-two">02 / MAKE</div><div class="float-tag tag-three">03 / SHARE</div>
+          <div class="showcase-window">
+            <div class="window-bar"><i></i><i></i><i></i><span>macaber.github.io</span></div>
+            <div class="showcase-content">
+              <span class="showcase-label">LATEST THOUGHT</span>
+              <strong>Stay curious.<br />Keep building.</strong>
+              <div class="showcase-line"></div>
+              <small>CODE · DESIGN · NOTES</small>
+            </div>
+          </div>
+          <div class="glow-orb"></div>
         </div>
-        <div class="hero-index" aria-hidden="true">01</div>
       </section>
       <section class="manifesto shell reveal" aria-label="理念">
-        <p>探索复杂，<span>表达简单。</span></p><div class="manifesto-meta">CODE / DESIGN / NOTES<br />SHANGHAI · <span data-clock>--:--:--</span></div>
+        <article><span>01</span><h3>思考</h3><p>保持好奇，理解事物背后的逻辑。</p></article>
+        <article><span>02</span><h3>创造</h3><p>用代码与设计，让想法成为现实。</p></article>
+        <article><span>03</span><h3>记录</h3><p>沉淀过程，也分享真正有用的经验。</p></article>
       </section>
       <section class="docs-section shell" id="docs">
         <div class="section-heading reveal">
-          <div><span class="section-number">02</span><p class="eyebrow">THE ARCHIVE</p><h2>文档目录</h2></div>
-          <p>持续更新的笔记、教程和想法。<br />每一篇都从一个 Markdown 文件开始。</p>
+          <div><p class="eyebrow">THE ARCHIVE</p><h2>最新文档</h2></div>
+          <p>持续更新的笔记、教程和想法。<br />选择一篇，安静地读一会儿。</p>
         </div>
         <div class="docs-toolbar reveal">
-          <label class="search-box"><span aria-hidden="true">⌕</span><input id="doc-search" type="search" placeholder="搜索标题、标签或内容…" autocomplete="off" /><kbd>/</kbd></label>
-          <div class="doc-count"><strong data-doc-count>0</strong> ENTRIES</div>
+          <label class="search-box"><span aria-hidden="true">⌕</span><input id="doc-search" type="search" placeholder="搜索文档" autocomplete="off" /><kbd>/</kbd></label>
+          <div class="doc-count"><strong data-doc-count>0</strong> 篇文档</div>
         </div>
         <div class="docs-list" data-docs-list aria-live="polite"></div>
         <div class="empty-state" data-empty-state hidden><span>∅</span><p>没有找到匹配的文档</p></div>
       </section>
     </main>
-    <footer class="site-footer shell"><div class="footer-mark">M<span>/</span></div><p>Designed &amp; built with curiosity.</p><p>© <span data-year></span> MACABER</p><a href="#">BACK TO TOP ↑</a></footer>
+    <footer class="site-footer shell"><a class="footer-brand" href="/">Macaber</a><p>用好奇心设计与构建。</p><p>© <span data-year></span> Macaber</p><a href="#">返回顶部 ↑</a></footer>
     <script id="docs-data" type="application/json">__DOCS_DATA__</script>
     <script src="/assets/app.js" defer></script>
   </body>

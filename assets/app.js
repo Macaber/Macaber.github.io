@@ -25,7 +25,7 @@
   const render = (items) => {
     if (count) count.textContent = String(items.length).padStart(2, '0');
     if (empty) empty.hidden = items.length > 0;
-    list.innerHTML = items.map((doc, index) => `<a class="doc-card" href="${escape(doc.url)}"><span class="doc-card-index">${String(index + 1).padStart(2, '0')}</span><div><h3>${escape(doc.title)}</h3><p>${escape(doc.description || '一篇来自 Macaber 的笔记。')}</p></div><div class="doc-meta"><span>${escape(doc.date || 'UNDATED')}</span><div class="doc-tags">${(doc.tags || []).slice(0, 2).map(tag => `<span>${escape(tag)}</span>`).join('')}</div></div><span class="doc-arrow">↗</span></a>`).join('');
+    list.innerHTML = items.map((doc, index) => `<a class="doc-card" href="${escape(doc.url)}"><div class="doc-card-top"><span class="doc-card-index">${String(index + 1).padStart(2, '0')}</span><span class="doc-arrow">↗</span></div><div class="doc-meta"><span>${escape(doc.date || '随笔')}</span><div class="doc-tags">${(doc.tags || []).slice(0, 2).map(tag => `<span>${escape(tag)}</span>`).join('')}</div></div><div class="doc-copy"><h3>${escape(doc.title)}</h3><p>${escape(doc.description || '一篇来自 Macaber 的笔记。')}</p></div><span class="doc-read">阅读文章 <b>›</b></span></a>`).join('');
   };
   render(docs);
   const input = document.querySelector('#doc-search');
